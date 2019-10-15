@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+route::get('/name/{name}/lastname/{lastname?}', function($name , $lastname = '') {
+return 'HOLAAAA ' . $name . $lastname;
+});
+
+route::get('/mi_primer_ruta', function(){
+	return 'Hola Mundo, esta es mi primera ruta ;D.';
+});
